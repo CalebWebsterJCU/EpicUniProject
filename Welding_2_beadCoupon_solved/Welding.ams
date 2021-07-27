@@ -1,0 +1,19 @@
+
+{
+	"solver_data":{
+		"solution_module" : "ams",
+		"application_name" : "WeldingApplication",
+		"comments" : "Used to invoke the correct solver"
+	},
+	"input_files":{
+		"filelist" : ["Welding.ams", "Welding.mdpa","ProjectParameters.json","material.json"],
+		"comments" : "Used for data transfer to remote servers"
+	},
+	"metadata":{
+		"created by" : "SimLab 2021.2",
+		"created date" : "July 22,2021",
+		"username" : "Reuben",
+		"computer name" : "DESKTOP-T2DRQT3",
+		"data description" : ""
+	}
+}

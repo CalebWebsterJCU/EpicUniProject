@@ -1,0 +1,108 @@
+{
+    "ams_recipe_meta_data": {
+        "recipe_version": "2021.1",
+        "solution_module": "welding",
+        "job_name": "Welding"
+    },
+    "part_list": {
+        "WeldBody_3": "WeldBodies.WeldBody_3",
+        "WeldBody_4": "WeldBodies.WeldBody_4",
+        "WeldBody_5": "WeldBodies.WeldBody_5",
+        "Solid2": "MetalBodies.Solid2",
+        "WeldBody_1": "WeldBodies.WeldBody_1",
+        "WeldBody_2": "WeldBodies.WeldBody_2"
+    },
+    "stages_list": [
+        [
+            0,
+            "welding_thermal_analysis"
+        ]
+    ],
+    "problem_data": {
+        "problem_name": "Welding",
+        "time_step": 1,
+        "end_time": 101
+    },
+    "initial_condition_list": [
+        [
+            "WeldBody_2",
+            "TEMPERATURE",
+            500
+        ],
+        [
+            "WeldBody_1",
+            "TEMPERATURE",
+            500
+        ],
+        [
+            "Solid2",
+            "TEMPERATURE",
+            500
+        ]
+    ],
+    "heat_transfer_bc_list": {
+        "Convection_3": {
+            "htc": 10,
+            "air_temperature": 373.15,
+            "emissivity": 0.8
+        }
+    },
+    "displacement_bc_list": {
+        "Face_Constraint_6": {
+            "constraint_dofs": "123",
+            "displacements": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        }
+    },
+    "heat_source_list": {
+        "HeatSource_5": {
+            "power": 1500,
+            "front_length": 0.005,
+            "rear_length": 0.005,
+            "width": 0.003,
+            "depth": 0.002
+        }
+    },
+    "weld_sequence_list": {
+        "WeldRobot_7": [
+            {
+                "model_part_name": "WeldBody_1",
+                "heat_source_name": "HeatSource_5",
+                "trajectory": "WeldBody_1.json",
+                "speed": 0.01,
+                "start_time": 0
+            },
+            {
+                "model_part_name": "WeldBody_2",
+                "heat_source_name": "HeatSource_5",
+                "trajectory": "WeldBody_2.json",
+                "speed": 0.01,
+                "start_time": 25
+            },
+            {
+                "model_part_name": "WeldBody_3",
+                "heat_source_name": "HeatSource_5",
+                "trajectory": "WeldBody_3.json",
+                "speed": 0.01,
+                "start_time": 50
+            },
+            {
+                "model_part_name": "WeldBody_4",
+                "heat_source_name": "HeatSource_5",
+                "trajectory": "WeldBody_4.json",
+                "speed": 0.01,
+                "start_time": 75
+            },
+            {
+                "model_part_name": "WeldBody_5",
+                "heat_source_name": "HeatSource_5",
+                "trajectory": "WeldBody_5.json",
+                "speed": 1.0,
+                "start_time": 1
+            }
+        ]
+    }
+}

@@ -1,0 +1,248 @@
+{
+    "analysis_stages": [
+        {
+            "ams_module": "WeldingApplication",
+            "analysis_type": "welding_thermal_analysis",
+            "output_settings": {
+                "h3d_settings": {
+                    "components_modelparts": [
+                        "WeldBody_1",
+                        "Solid2",
+                        "WeldBody_5",
+                        "WeldBody_2",
+                        "WeldBody_3",
+                        "WeldBody_4"
+                    ],
+                    "output_filename": "Welding.h3d"
+                }
+            },
+            "problem_data": {
+                "echo_level": 0,
+                "end_time": 101,
+                "input_filename": "castRun",
+                "input_type": "mdpa",
+                "number_of_threads": -1,
+                "parallel_type": "OpenMP",
+                "problem_name": "Welding",
+                "reorder": false,
+                "solver_status_file_name": "SolverStatus.log",
+                "time_step": 1
+            },
+            "processes": {
+                "boundary_conditions": [
+                    {
+                        "Parameters": {
+                            "Tables": {},
+                            "Variables": {
+                                "AMBIENT_TEMPERATURE": 373.15,
+                                "CONVECTION_COEFFICIENT": 10,
+                                "EMISSIVITY": 0.8
+                            },
+                            "model_part_name": "thermal_model_part.Convection_3"
+                        },
+                        "kratos_module": "KratosMultiphysics.WeldingApplication",
+                        "process_name": "HeatTransferBCProcess",
+                        "python_module": "heat_transfer_bc_process"
+                    }
+                ],
+                "custom_processes": [
+                    {
+                        "Parameters": {
+                            "heat_source_depth": 0.002,
+                            "heat_source_front_length": 0.005,
+                            "heat_source_power": 1500,
+                            "heat_source_rear_length": 0.005,
+                            "heat_source_speed": 0.01,
+                            "heat_source_width": 0.003,
+                            "include_json": ".json",
+                            "model_part_name": "thermal_model_part.WeldBodies.WeldBody_1",
+                            "start_time": 0
+                        },
+                        "kratos_module": "KratosMultiphysics.WeldingApplication",
+                        "process_name": "NodeBasedDoubleEllipsoidHeatSourceWrapperProcess",
+                        "python_module": "node_based_double_ellipsoid_heat_source_wrapper_process"
+                    },
+                    {
+                        "Parameters": {
+                            "heat_source_depth": 0.002,
+                            "heat_source_front_length": 0.005,
+                            "heat_source_power": 1500,
+                            "heat_source_rear_length": 0.005,
+                            "heat_source_speed": 0.01,
+                            "heat_source_width": 0.003,
+                            "include_json": ".json",
+                            "model_part_name": "thermal_model_part.WeldBodies.WeldBody_2",
+                            "start_time": 25
+                        },
+                        "kratos_module": "KratosMultiphysics.WeldingApplication",
+                        "process_name": "NodeBasedDoubleEllipsoidHeatSourceWrapperProcess",
+                        "python_module": "node_based_double_ellipsoid_heat_source_wrapper_process"
+                    },
+                    {
+                        "Parameters": {
+                            "heat_source_depth": 0.002,
+                            "heat_source_front_length": 0.005,
+                            "heat_source_power": 1500,
+                            "heat_source_rear_length": 0.005,
+                            "heat_source_speed": 0.01,
+                            "heat_source_width": 0.003,
+                            "include_json": ".json",
+                            "model_part_name": "thermal_model_part.WeldBodies.WeldBody_3",
+                            "start_time": 50
+                        },
+                        "kratos_module": "KratosMultiphysics.WeldingApplication",
+                        "process_name": "NodeBasedDoubleEllipsoidHeatSourceWrapperProcess",
+                        "python_module": "node_based_double_ellipsoid_heat_source_wrapper_process"
+                    },
+                    {
+                        "Parameters": {
+                            "heat_source_depth": 0.002,
+                            "heat_source_front_length": 0.005,
+                            "heat_source_power": 1500,
+                            "heat_source_rear_length": 0.005,
+                            "heat_source_speed": 0.01,
+                            "heat_source_width": 0.003,
+                            "include_json": ".json",
+                            "model_part_name": "thermal_model_part.WeldBodies.WeldBody_4",
+                            "start_time": 75
+                        },
+                        "kratos_module": "KratosMultiphysics.WeldingApplication",
+                        "process_name": "NodeBasedDoubleEllipsoidHeatSourceWrapperProcess",
+                        "python_module": "node_based_double_ellipsoid_heat_source_wrapper_process"
+                    },
+                    {
+                        "Parameters": {
+                            "heat_source_depth": 0.002,
+                            "heat_source_front_length": 0.005,
+                            "heat_source_power": 1500,
+                            "heat_source_rear_length": 0.005,
+                            "heat_source_speed": 0.01,
+                            "heat_source_width": 0.003,
+                            "include_json": ".json",
+                            "model_part_name": "thermal_model_part.WeldBodies.WeldBody_5",
+                            "start_time": 100
+                        },
+                        "kratos_module": "KratosMultiphysics.WeldingApplication",
+                        "process_name": "NodeBasedDoubleEllipsoidHeatSourceWrapperProcess",
+                        "python_module": "node_based_double_ellipsoid_heat_source_wrapper_process"
+                    }
+                ],
+                "default_processes": [
+                    {
+                        "Parameters": {
+                            "model_part_name": "main_model_part"
+                        },
+                        "help": "",
+                        "kratos_module": "KratosMultiphysics.WeldingApplication",
+                        "process_name": "ComputeCoolingRateProcess",
+                        "python_module": "compute_cooling_rate_process"
+                    },
+                    {
+                        "Parameters": {
+                            "model_part_name": "main_model_part"
+                        },
+                        "help": "",
+                        "kratos_module": "KratosMultiphysics.WeldingApplication",
+                        "process_name": "ComputePeakTemperatureProcess",
+                        "python_module": "compute_peak_temperature_process"
+                    }
+                ],
+                "initial_conditions": [
+                    {
+                        "Parameters": {
+                            "is_fixed": false,
+                            "mesh_id": 0,
+                            "model_part_name": "thermal_model_part.WeldBodies.WeldBody_2",
+                            "value": 500,
+                            "variable_name": "TEMPERATURE"
+                        },
+                        "kratos_module": "KratosMultiphysics",
+                        "process_name": "ApplyConstantScalarValueProcess",
+                        "python_module": "process_factory"
+                    },
+                    {
+                        "Parameters": {
+                            "is_fixed": false,
+                            "mesh_id": 0,
+                            "model_part_name": "thermal_model_part.WeldBodies.WeldBody_1",
+                            "value": 500,
+                            "variable_name": "TEMPERATURE"
+                        },
+                        "kratos_module": "KratosMultiphysics",
+                        "process_name": "ApplyConstantScalarValueProcess",
+                        "python_module": "process_factory"
+                    },
+                    {
+                        "Parameters": {
+                            "is_fixed": false,
+                            "mesh_id": 0,
+                            "model_part_name": "thermal_model_part.MetalBodies.Solid2",
+                            "value": 500,
+                            "variable_name": "TEMPERATURE"
+                        },
+                        "kratos_module": "KratosMultiphysics",
+                        "process_name": "ApplyConstantScalarValueProcess",
+                        "python_module": "process_factory"
+                    }
+                ]
+            },
+            "solver_settings": {
+                "computation_model_part_domain": "main_model_part",
+                "condition_name": "ConvectionRadiationFace3D3N",
+                "domain_size": 3,
+                "echo_level": 0,
+                "element_name": "PureDiffElement3D4N",
+                "linear_solver_settings": {
+                    "coarsening_type": "aggregation",
+                    "gmres_krylov_space_dimension": 100,
+                    "krylov_type": "lgmres",
+                    "max_iteration": 200,
+                    "provide_coordinates": false,
+                    "scaling": true,
+                    "smoother_type": "ilu0",
+                    "solver_type": "amgcl",
+                    "tolerance": 1e-06,
+                    "use_block_matrices_if_possible": false,
+                    "verbosity": 0
+                },
+                "material_import_settings": {
+                    "Parameters": {
+                        "materials_filename": "material.json"
+                    }
+                },
+                "max_iteration": 10,
+                "model_import_settings": {
+                    "computing_model_part": "thermal_model_part",
+                    "ignore_variables_not_in_solution_step_data": false,
+                    "input_filename": "Welding",
+                    "input_type": "mdpa",
+                    "reorder": false,
+                    "reorder_consecutive": false,
+                    "skip_timer": true,
+                    "sub_model_part_list": []
+                },
+                "model_part_name": "main_model_part",
+                "problem_data": {},
+                "problem_name": "Welding",
+                "solver_type": "ams_thermal_solver",
+                "solving_strategy_settings": {
+                    "absolute_tolerance": 0.001,
+                    "convergence_criterion": "residual",
+                    "relative_tolerance": 0.001,
+                    "type": "newton_raphson"
+                },
+                "steady_state": false,
+                "strategy_type": "Non-Linear",
+                "time_step_settings": {
+                    "time_step": 1
+                }
+            }
+        }
+    ],
+    "problem_data": {
+        "end_time": 101,
+        "problem_name": "Welding",
+        "solver_status_file_name": "SolverStatus.log",
+        "time_step": 1
+    }
+}

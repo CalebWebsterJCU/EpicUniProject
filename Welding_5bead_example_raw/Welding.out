@@ -1,0 +1,42 @@
+ ************************************************************************
+ **                                                                    **
+ **                                                                    **
+ **                    Altair Manufacturing Solver                     **
+ **                          Version : 2021.2                          **
+ **       Finite Element Analysis Software for the Simulation of       **
+ **                      Manufacturing Processes                       **
+ **                   from Altair Engineering, Inc.                    **
+ **                                                                    **
+ **                                                                    **
+ **                      Windows 10 (Build 9200)                       **
+ **                                                                    **
+ **              Intel(R) Core(TM) i7-8850H CPU @ 2.60GHz              **
+ **                             12 Core(s)                             **
+ **                         CPU speed 2617 MHz                         **
+ **                    18157 MB RAM,  38718 MB swap                    **
+ **               Build Tag : stable-4ebbdd608-20210705                **
+ ************************************************************************
+ ** COPYRIGHT (C) 1996-2021                 Altair Engineering, Inc.   **
+ ** All Rights Reserved.  Copyright notice does not imply publication. **
+ ** Contains trade secrets of Altair Engineering, Inc.                 **
+ ** Decompilation or disassembly of this software strictly prohibited. **
+ ************************************************************************
+
+ ************************************************************************
+ *                                                                      *
+ * RESOURCE USAGE INFORMATION                                           *
+ * --------------------------                                           *
+ * Number of CPU core(s)   : 12                                         *
+ *                                                                      *
+ ************************************************************************
+ *                                                                      *
+ * MODEL UNITS                                                          *
+ * -----------                                                          *
+ * Length/Geometry Unit   :  m                                          *
+ * Velocity Unit          :  m/sec                                      *
+ * Temperature Unit       :  K                                          *
+ * Pressure/Stress Unit   :  Pa                                         *
+ *                                                                      *
+ ************************************************************************
+
+Welding Thermal Analysis:

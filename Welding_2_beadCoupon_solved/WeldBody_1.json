@@ -1,0 +1,43 @@
+{
+    "weld_path_node_list": [
+        {
+            "Nodeid": 6,
+            "WeldSurfaceMidPoint": [
+                -0.000000,
+                0.000000,
+                0.000000
+            ],
+            "WeldSurfaceNormalVector": [
+                -1,
+                1,
+                0.000000
+            ]
+        },
+        {
+            "Nodeid": 55,
+            "WeldSurfaceMidPoint": [
+                -0.000000,
+                0.000000,
+                0.000000
+            ],
+            "WeldSurfaceNormalVector": [
+                -1,
+                1,
+                0.000000
+            ]
+        },
+        {
+            "Nodeid": 92,
+            "WeldSurfaceMidPoint": [
+                -0.000000,
+                0.000000,
+                0.000000
+            ],
+            "WeldSurfaceNormalVector": [
+                -1,
+                1,
+                0.000000
+            ]
+        }
+    ]
+}

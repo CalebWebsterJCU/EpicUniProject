@@ -1,0 +1,28 @@
+
+{
+"properties" : [
+	{
+		"model_part_name" : "main_model_part",
+		"properties_id" : 1,
+		"Material" : {
+			"name" : "Steel",
+			"constitutive_law" :  {
+				"name" : "ElasticInherentStrain3DLaw" 
+			},
+			"Variables" :  {
+				"DENSITY"                                : 7850,
+				"LATENT_HEAT"                         : 0,
+				"FLUID_TEMPERATURE"                   : 0,
+				"SOLID_TEMPERATURE"                   : 0,
+				"YOUNG_MODULUS"						: 2e+11,
+				"POISSON_RATIO"						: 0.29,
+				"SPECIFIC_HEAT"                      : 500,
+				"CONDUCTIVITY"                       : 49.81,
+				"THERMAL_EXPANSION_COEFFICIENT"		: 1.13e-05,
+				"REFERENCE_TEMPERATURE"               : 293.15
+			},
+			"Tables" : {}
+		}
+	}
+]
+}

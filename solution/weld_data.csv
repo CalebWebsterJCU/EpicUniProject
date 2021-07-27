@@ -1,0 +1,6 @@
+﻿Name,WeldBody,Start,Middle,End,MidPointX,MidPointY,MidPointZ,NormVectX,NormVectY,NormVectZ,HSDepth,HSFrontLength,HSPower,HSRearLength,HSSpeed,HSWidth,StartTime
+WeldBody_1,1,4,20,40,0,10,0,1,1,0,0.002,0.005,1500,0.005,0.01,0.003,0
+WeldBody_2,2,50,70,90,0,10,0,1,1,0,0.002,0.005,1500,0.005,0.01,0.003,25
+WeldBody_3,3,96,120,140,0,10,0,1,1,0,0.002,0.005,1500,0.005,0.01,0.003,50
+WeldBody_4,4,142,170,190,0,10,0,1,1,0,0.002,0.005,1500,0.005,0.01,0.003,75
+WeldBody_5,5,188,220,240,0,10,0,1,1,0,0.002,0.005,1500,0.005,0.01,0.003,100

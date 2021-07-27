@@ -1,0 +1,171 @@
+Altair Manufacturing Solver
+version: 2021.2-4ebbdd608
+
+ |  /           |             
+ ' /   __| _` | __|  _ \   __|
+ . \  |   (   | |   (   |\__ \ 
+_|\_\_|  \__,_|\__|\___/ ____/
+           Multi-Physics 9.0."Dev"-4ebbdd608-Release
+WeldingThermalSolver: Construction finished 
+Construction of WeldingThermalSolver finished 
+::[AltairManufacturingSolver]:: : Variables added correctly 
+variables for WeldingThermalSolver added correctly 
+RadflexLicenseProcess: *******************************************
+RadflexLicenseProcess: * Checking for a valid Altair license     *
+RadflexLicenseProcess: *******************************************
+RadflexLicenseProcess: License request successful! 
+One or more of the required features checked out will expire in 9 day(s)
+
+[WARNING] Welding: Using default license settings from AMS base,  
+[WARNING] Welding: Replace with welding-specific license settings 
+::[PythonSolver]::: Reading model part. 
+::[PythonSolver]::: Reading model part from file: E:\Projects\Welding\Welding(2)\Welding\Welding.mdpa 
+ModelPartIO:   [Reading Nodes    : 19033 nodes read]
+ModelPartIO:   [Reading Elements : 83825 elements read] [Type: Element3D4N]
+ModelPartIO:   [Reading Conditions : 18416 conditions read] [Type: SurfaceCondition3D3N]
+ModelPartIO:   [Total Lines Read : 252206]
+::[PythonSolver]::: Finished reading model part from mdpa file. 
+ModelPart: -main_model_part- model part
+    Buffer Size : 1
+    Number of tables : 0
+    Number of sub model parts : 4
+    Current solution step index : 0
+    DOMAIN_SIZE : 3
+    STEADY_STATE : 0
+
+    Number of Geometries  : 0
+    Mesh 0 :
+        Number of Nodes       : 19033
+        Number of Properties  : 1
+        Number of Elements    : 83825
+        Number of Conditions  : 18416
+        Number of Constraints : 0
+
+    -Convection_3- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 9118
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 18216
+            Number of Constraints : 0
+    -Face_Constraint_6- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 506
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 0
+            Number of Constraints : 0
+    -MetalBodies- model part
+        Number of tables : 0
+        Number of sub model parts : 1
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 15602
+            Number of Properties  : 0
+            Number of Elements    : 70094
+            Number of Conditions  : 0
+            Number of Constraints : 0
+        -Solid2- model part
+            Number of tables : 0
+            Number of sub model parts : 0
+
+            Number of Geometries  : 0
+            Mesh 0 :
+                Number of Nodes       : 15602
+                Number of Properties  : 0
+                Number of Elements    : 70094
+                Number of Conditions  : 0
+                Number of Constraints : 0
+    -WeldBodies- model part
+        Number of tables : 0
+        Number of sub model parts : 5
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 3431
+            Number of Properties  : 0
+            Number of Elements    : 13731
+            Number of Conditions  : 0
+            Number of Constraints : 0
+        -WeldBody_1- model part
+            Number of tables : 0
+            Number of sub model parts : 0
+
+            Number of Geometries  : 0
+            Mesh 0 :
+                Number of Nodes       : 735
+                Number of Properties  : 0
+                Number of Elements    : 2845
+                Number of Conditions  : 0
+                Number of Constraints : 0
+        -WeldBody_2- model part
+            Number of tables : 0
+            Number of sub model parts : 0
+
+            Number of Geometries  : 0
+            Mesh 0 :
+                Number of Nodes       : 794
+                Number of Properties  : 0
+                Number of Elements    : 3069
+                Number of Conditions  : 0
+                Number of Constraints : 0
+        -WeldBody_3- model part
+            Number of tables : 0
+            Number of sub model parts : 0
+
+            Number of Geometries  : 0
+            Mesh 0 :
+                Number of Nodes       : 633
+                Number of Properties  : 0
+                Number of Elements    : 2418
+                Number of Conditions  : 0
+                Number of Constraints : 0
+        -WeldBody_4- model part
+            Number of tables : 0
+            Number of sub model parts : 0
+
+            Number of Geometries  : 0
+            Mesh 0 :
+                Number of Nodes       : 730
+                Number of Properties  : 0
+                Number of Elements    : 2809
+                Number of Conditions  : 0
+                Number of Constraints : 0
+        -WeldBody_5- model part
+            Number of tables : 0
+            Number of sub model parts : 0
+
+            Number of Geometries  : 0
+            Mesh 0 :
+                Number of Nodes       : 691
+                Number of Properties  : 0
+                Number of Elements    : 2590
+                Number of Conditions  : 0
+                Number of Constraints : 0
+ 
+::[PythonSolver]:: : Finished reading model part. 
+::[AltairManufacturingSolver]:: : Finished reading model part. 
+Read materials: Started
+Read materials: Finished
+::[AltairManufacturingSolver]:: : Finished importing model part. 
+WeldingThermalSolver: Finished reading model part. 
+WeldingThermalSolver PrepareModelPart Finished 
+WeldingThermalSolver: DOFs added correctly 
+Initializing HeatTransferBCProcess 
+Initializing ComputeCoolingRate 
+Initializing ComputePeakTemperatureProcess 
+********************************************************** 
+*****       Altair Manufacturing Solver Error          *** 
+********************************************************** 
+[Errno 2] No such file or directory: '.json' 
+********************************************************** 
+RadflexLicenseProcess: RadFlex: Releasing checked out licenses back to the server.

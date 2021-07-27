@@ -1,0 +1,1667 @@
+Altair Manufacturing Solver
+version: 2021.2-4ebbdd608
+
+ |  /           |             
+ ' /   __| _` | __|  _ \   __|
+ . \  |   (   | |   (   |\__ \ 
+_|\_\_|  \__,_|\__|\___/ ____/
+           Multi-Physics 9.0."Dev"-4ebbdd608-Release
+WeldingThermalSolver: Construction finished 
+Construction of WeldingThermalSolver finished 
+::[AltairManufacturingSolver]:: : Variables added correctly 
+variables for WeldingThermalSolver added correctly 
+RadflexLicenseProcess: *******************************************
+RadflexLicenseProcess: * Checking for a valid Altair license     *
+RadflexLicenseProcess: *******************************************
+RadflexLicenseProcess: License request successful! 
+One or more of the required features checked out will expire in 10 day(s)
+
+[WARNING] Welding: Using default license settings from AMS base,  
+[WARNING] Welding: Replace with welding-specific license settings 
+::[PythonSolver]::: Reading model part. 
+::[PythonSolver]::: Reading model part from file: E:\Projects\Welding\Welding\Welding\Welding.mdpa 
+ModelPartIO:   [Reading Nodes    : 16539 nodes read]
+ModelPartIO:   [Reading Elements : 74078 elements read] [Type: Element3D4N]
+ModelPartIO:   [Reading Conditions : 15866 conditions read] [Type: SurfaceCondition3D3N]
+ModelPartIO:   [Total Lines Read : 221319]
+::[PythonSolver]::: Finished reading model part from mdpa file. 
+ModelPart: -main_model_part- model part
+    Buffer Size : 1
+    Number of tables : 0
+    Number of sub model parts : 4
+    Current solution step index : 0
+    DOMAIN_SIZE : 3
+    STEADY_STATE : 0
+
+    Number of Geometries  : 0
+    Mesh 0 :
+        Number of Nodes       : 16539
+        Number of Properties  : 1
+        Number of Elements    : 74078
+        Number of Conditions  : 15866
+        Number of Constraints : 0
+
+    -Convection_3- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 7837
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 15666
+            Number of Constraints : 0
+    -Face_Constraint_6- model part
+        Number of tables : 0
+        Number of sub model parts : 0
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 506
+            Number of Properties  : 0
+            Number of Elements    : 0
+            Number of Conditions  : 0
+            Number of Constraints : 0
+    -MetalBodies- model part
+        Number of tables : 0
+        Number of sub model parts : 1
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 15158
+            Number of Properties  : 0
+            Number of Elements    : 68141
+            Number of Conditions  : 0
+            Number of Constraints : 0
+        -Solid2- model part
+            Number of tables : 0
+            Number of sub model parts : 0
+
+            Number of Geometries  : 0
+            Mesh 0 :
+                Number of Nodes       : 15158
+                Number of Properties  : 0
+                Number of Elements    : 68141
+                Number of Conditions  : 0
+                Number of Constraints : 0
+    -WeldBodies- model part
+        Number of tables : 0
+        Number of sub model parts : 2
+
+        Number of Geometries  : 0
+        Mesh 0 :
+            Number of Nodes       : 1381
+            Number of Properties  : 0
+            Number of Elements    : 5937
+            Number of Conditions  : 0
+            Number of Constraints : 0
+        -WeldBody_1- model part
+            Number of tables : 0
+            Number of sub model parts : 0
+
+            Number of Geometries  : 0
+            Mesh 0 :
+                Number of Nodes       : 735
+                Number of Properties  : 0
+                Number of Elements    : 2845
+                Number of Conditions  : 0
+                Number of Constraints : 0
+        -WeldBody_2- model part
+            Number of tables : 0
+            Number of sub model parts : 0
+
+            Number of Geometries  : 0
+            Mesh 0 :
+                Number of Nodes       : 798
+                Number of Properties  : 0
+                Number of Elements    : 3092
+                Number of Conditions  : 0
+                Number of Constraints : 0
+ 
+::[PythonSolver]:: : Finished reading model part. 
+::[AltairManufacturingSolver]:: : Finished reading model part. 
+Read materials: Started
+Read materials: Finished
+::[AltairManufacturingSolver]:: : Finished importing model part. 
+WeldingThermalSolver: Finished reading model part. 
+WeldingThermalSolver PrepareModelPart Finished 
+WeldingThermalSolver: DOFs added correctly 
+Initializing HeatTransferBCProcess 
+Initializing ComputeCoolingRate 
+Initializing ComputePeakTemperatureProcess 
+***************************************************************************
+* The ModelParts that will be translated to components are:               *
+***************************************************************************
+* Solid2 -> 3                                                             *
+* WeldBody_1 -> 2                                                         *
+* WeldBody_2 -> 1                                                         *
+***************************************************************************
+***************************************************************************
+* The ModelParts that will be translated to sets are:                     *
+***************************************************************************
+* Solid2                                                                  *
+* WeldBody_1                                                              *
+* WeldBody_2                                                              *
+***************************************************************************
+*****************************************************************: 
+The Added Variables for Output are:: 
+TEMPERATURE as   U.In: (degK) U.Out: ( (degK)) 
+VOLUME_HEAT as   U.In: () U.Out: ( ()) 
+PEAK_TEMPERATURE as   U.In: (degK) U.Out: ( (degK)) 
+COOLING_RATE as   U.In: (degK) U.Out: ( (degK)) 
+HEAT_SOURCE_ORIENTATION as   U.In: (m) U.Out: ( (m)) 
+*****************************************************************: 
+
+ Initializing WeldingThermalSolver  
+Linear-Solver-Factory: Constructing a regular (non-complex) linear-solver 
+WeldingThermalSolver: Solver initialized 
+Initialization WeldingThermalSolver Finished 
+Welding Thermal Analysis: Analysis -START-  
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 1, COMPLETED: 0.00 %, TIME: 1.000000e+00: 
+Step: 1 
+Time (s): 1.0000e+00 
+Stage time (s): 1.0000e+00 
+-------------------------------------------------------------------------------- 
+Completed (%): 0.00 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: Setup Dofs Time: 0.173519
+ResidualBasedNewtonRaphsonStrategy: Setup System Time: 2.25e-05
+ResidualBasedNewtonRaphsonStrategy: System Matrix Resize Time: 0.446692
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 0.621441
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.441584
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.452837
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0319312; Expected ratio = 0.001; Absolute norm = 0.000809606; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  1 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 2, COMPLETED: 1.43 %, TIME: 2.000000e+00: 
+Step: 2 
+Time (s): 2.0000e+00 
+Stage time (s): 2.0000e+00 
+-------------------------------------------------------------------------------- 
+Completed (%): 1.43 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 3e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.444762
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.380514
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0326073; Expected ratio = 0.001; Absolute norm = 0.00097213; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  2 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 3, COMPLETED: 2.86 %, TIME: 3.000000e+00: 
+Step: 3 
+Time (s): 3.0000e+00 
+Stage time (s): 3.0000e+00 
+-------------------------------------------------------------------------------- 
+Completed (%): 2.86 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 5e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.43886
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.444458
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0436114; Expected ratio = 0.001; Absolute norm = 0.00140615; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.445275
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.38845
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000240273; Expected ratio = 0.001; Absolute norm = 7.74703e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  3 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 4, COMPLETED: 4.29 %, TIME: 4.000000e+00: 
+Step: 4 
+Time (s): 4.0000e+00 
+Stage time (s): 4.0000e+00 
+-------------------------------------------------------------------------------- 
+Completed (%): 4.29 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.452185
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.394187
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0416457; Expected ratio = 0.001; Absolute norm = 0.00131506; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.446831
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.358238
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000189827; Expected ratio = 0.001; Absolute norm = 5.99421e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  4 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 5, COMPLETED: 5.71 %, TIME: 5.000000e+00: 
+Step: 5 
+Time (s): 5.0000e+00 
+Stage time (s): 5.0000e+00 
+-------------------------------------------------------------------------------- 
+Completed (%): 5.71 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 3e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.443563
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.396066
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0391051; Expected ratio = 0.001; Absolute norm = 0.00117533; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.444504
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.385608
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000162028; Expected ratio = 0.001; Absolute norm = 4.86985e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  5 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 6, COMPLETED: 7.14 %, TIME: 6.000000e+00: 
+Step: 6 
+Time (s): 6.0000e+00 
+Stage time (s): 6.0000e+00 
+-------------------------------------------------------------------------------- 
+Completed (%): 7.14 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 3e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.444668
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.447953
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0469324; Expected ratio = 0.001; Absolute norm = 0.00150635; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.443846
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.382567
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000275951; Expected ratio = 0.001; Absolute norm = 8.857e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  6 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 7, COMPLETED: 8.57 %, TIME: 7.000000e+00: 
+Step: 7 
+Time (s): 7.0000e+00 
+Stage time (s): 7.0000e+00 
+-------------------------------------------------------------------------------- 
+Completed (%): 8.57 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 3e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.437861
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.441538
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0453742; Expected ratio = 0.001; Absolute norm = 0.00152394; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.445157
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.36182
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000262971; Expected ratio = 0.001; Absolute norm = 8.83217e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  7 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 8, COMPLETED: 10.00 %, TIME: 8.000000e+00: 
+Step: 8 
+Time (s): 8.0000e+00 
+Stage time (s): 8.0000e+00 
+-------------------------------------------------------------------------------- 
+Completed (%): 10.00 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 3e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.446323
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.389664
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.038551; Expected ratio = 0.001; Absolute norm = 0.00119997; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.449179
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.447402
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000148825; Expected ratio = 0.001; Absolute norm = 4.63244e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  8 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 9, COMPLETED: 11.43 %, TIME: 9.000000e+00: 
+Step: 9 
+Time (s): 9.0000e+00 
+Stage time (s): 9.0000e+00 
+-------------------------------------------------------------------------------- 
+Completed (%): 11.43 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 4e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.440457
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.440401
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0392591; Expected ratio = 0.001; Absolute norm = 0.00121437; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.439278
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.392238
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000169723; Expected ratio = 0.001; Absolute norm = 5.24992e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  9 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 10, COMPLETED: 12.86 %, TIME: 1.000000e+01: 
+Step: 10 
+Time (s): 1.0000e+01 
+Stage time (s): 1.0000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 12.86 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 5e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.437979
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.439378
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0404221; Expected ratio = 0.001; Absolute norm = 0.00128869; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.430808
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.390172
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000196078; Expected ratio = 0.001; Absolute norm = 6.25112e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  10 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 11, COMPLETED: 14.29 %, TIME: 1.100000e+01: 
+Step: 11 
+Time (s): 1.1000e+01 
+Stage time (s): 1.1000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 14.29 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 4e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.431922
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.443629
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0374701; Expected ratio = 0.001; Absolute norm = 0.00114572; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.443816
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.390995
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000137284; Expected ratio = 0.001; Absolute norm = 4.19772e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  11 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 12, COMPLETED: 15.71 %, TIME: 1.200000e+01: 
+Step: 12 
+Time (s): 1.2000e+01 
+Stage time (s): 1.2000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 15.71 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.438109
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.377991
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0467162; Expected ratio = 0.001; Absolute norm = 0.00151802; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.43832
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.393598
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000280613; Expected ratio = 0.001; Absolute norm = 9.11836e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  12 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 13, COMPLETED: 17.14 %, TIME: 1.300000e+01: 
+Step: 13 
+Time (s): 1.3000e+01 
+Stage time (s): 1.3000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 17.14 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.441654
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.443124
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0394113; Expected ratio = 0.001; Absolute norm = 0.00126531; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.455769
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.371642
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000166267; Expected ratio = 0.001; Absolute norm = 5.33807e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  13 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 14, COMPLETED: 18.57 %, TIME: 1.400000e+01: 
+Step: 14 
+Time (s): 1.4000e+01 
+Stage time (s): 1.4000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 18.57 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.437142
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.403791
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0434168; Expected ratio = 0.001; Absolute norm = 0.00140446; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.459239
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.359266
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.00023333; Expected ratio = 0.001; Absolute norm = 7.54784e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  14 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 15, COMPLETED: 20.00 %, TIME: 1.500000e+01: 
+Step: 15 
+Time (s): 1.5000e+01 
+Stage time (s): 1.5000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 20.00 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 1e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.439259
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.359733
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0392982; Expected ratio = 0.001; Absolute norm = 0.00124165; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.436545
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.378833
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000160852; Expected ratio = 0.001; Absolute norm = 5.0822e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  15 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 16, COMPLETED: 21.43 %, TIME: 1.600000e+01: 
+Step: 16 
+Time (s): 1.6000e+01 
+Stage time (s): 1.6000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 21.43 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 1e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.448562
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.368084
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0423843; Expected ratio = 0.001; Absolute norm = 0.00134923; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.439945
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.347334
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000212273; Expected ratio = 0.001; Absolute norm = 6.75732e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  16 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 17, COMPLETED: 22.86 %, TIME: 1.700000e+01: 
+Step: 17 
+Time (s): 1.7000e+01 
+Stage time (s): 1.7000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 22.86 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.469648
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.355434
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0434763; Expected ratio = 0.001; Absolute norm = 0.00144127; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.450435
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.365588
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000237625; Expected ratio = 0.001; Absolute norm = 7.87741e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  17 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 18, COMPLETED: 24.29 %, TIME: 1.800000e+01: 
+Step: 18 
+Time (s): 1.8000e+01 
+Stage time (s): 1.8000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 24.29 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.434238
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.389972
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0381396; Expected ratio = 0.001; Absolute norm = 0.00119883; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.441139
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.385109
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000149204; Expected ratio = 0.001; Absolute norm = 4.6899e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  18 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 19, COMPLETED: 25.71 %, TIME: 1.900000e+01: 
+Step: 19 
+Time (s): 1.9000e+01 
+Stage time (s): 1.9000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 25.71 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 4e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.438421
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.381174
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0385378; Expected ratio = 0.001; Absolute norm = 0.00120561; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.440856
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.357596
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000166255; Expected ratio = 0.001; Absolute norm = 5.20107e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  19 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 20, COMPLETED: 27.14 %, TIME: 2.000000e+01: 
+Step: 20 
+Time (s): 2.0000e+01 
+Stage time (s): 2.0000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 27.14 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 7e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.444103
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.394927
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.077992; Expected ratio = 0.001; Absolute norm = 0.0020023; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.446842
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.340392
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.00149005; Expected ratio = 0.001; Absolute norm = 3.82544e-05; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  20 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 21, COMPLETED: 28.57 %, TIME: 2.100000e+01: 
+Step: 21 
+Time (s): 2.1000e+01 
+Stage time (s): 2.1000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 28.57 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.461715
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.376166
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0598036; Expected ratio = 0.001; Absolute norm = 0.000783959; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  21 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 22, COMPLETED: 30.00 %, TIME: 2.200000e+01: 
+Step: 22 
+Time (s): 2.2000e+01 
+Stage time (s): 2.2000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 30.00 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 3e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.439742
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.395
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0183604; Expected ratio = 0.001; Absolute norm = 8.27064e-05; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  22 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 23, COMPLETED: 31.43 %, TIME: 2.300000e+01: 
+Step: 23 
+Time (s): 2.3000e+01 
+Stage time (s): 2.3000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 31.43 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 3e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.437273
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.39291
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.00649385; Expected ratio = 0.001; Absolute norm = 1.67459e-05; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  23 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 24, COMPLETED: 32.86 %, TIME: 2.400000e+01: 
+Step: 24 
+Time (s): 2.4000e+01 
+Stage time (s): 2.4000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 32.86 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.435265
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.400228
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.00293681; Expected ratio = 0.001; Absolute norm = 5.25808e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  24 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 25, COMPLETED: 34.29 %, TIME: 2.500000e+01: 
+Step: 25 
+Time (s): 2.5000e+01 
+Stage time (s): 2.5000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 34.29 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.456614
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.403682
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0495291; Expected ratio = 0.001; Absolute norm = 0.00116546; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.43356
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.367407
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000244954; Expected ratio = 0.001; Absolute norm = 5.76398e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  25 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 26, COMPLETED: 35.71 %, TIME: 2.600000e+01: 
+Step: 26 
+Time (s): 2.6000e+01 
+Stage time (s): 2.6000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 35.71 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.439973
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.34345
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0231185; Expected ratio = 0.001; Absolute norm = 0.000822615; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  26 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 27, COMPLETED: 37.14 %, TIME: 2.700000e+01: 
+Step: 27 
+Time (s): 2.7000e+01 
+Stage time (s): 2.7000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 37.14 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 6e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.43913
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.423271
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0246892; Expected ratio = 0.001; Absolute norm = 0.0010056; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.4379
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.319783
+RESIDUAL CRITERION:  :: [ Obtained ratio = 3.42782e-05; Expected ratio = 0.001; Absolute norm = 1.39617e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  27 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 28, COMPLETED: 38.57 %, TIME: 2.800000e+01: 
+Step: 28 
+Time (s): 2.8000e+01 
+Stage time (s): 2.8000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 38.57 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 1e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.446607
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.372292
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0232995; Expected ratio = 0.001; Absolute norm = 0.000939751; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  28 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 29, COMPLETED: 40.00 %, TIME: 2.900000e+01: 
+Step: 29 
+Time (s): 2.9000e+01 
+Stage time (s): 2.9000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 40.00 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 4e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.440194
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.394991
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0224806; Expected ratio = 0.001; Absolute norm = 0.000861292; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  29 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 30, COMPLETED: 41.43 %, TIME: 3.000000e+01: 
+Step: 30 
+Time (s): 3.0000e+01 
+Stage time (s): 3.0000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 41.43 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.443028
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.350592
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0259874; Expected ratio = 0.001; Absolute norm = 0.00109047; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.447702
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.371262
+RESIDUAL CRITERION:  :: [ Obtained ratio = 4.15202e-05; Expected ratio = 0.001; Absolute norm = 1.74225e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  30 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 31, COMPLETED: 42.86 %, TIME: 3.100000e+01: 
+Step: 31 
+Time (s): 3.1000e+01 
+Stage time (s): 3.1000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 42.86 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.442289
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.431673
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.026819; Expected ratio = 0.001; Absolute norm = 0.00115357; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.449594
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.560309
+RESIDUAL CRITERION:  :: [ Obtained ratio = 4.48272e-05; Expected ratio = 0.001; Absolute norm = 1.92816e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  31 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 32, COMPLETED: 44.29 %, TIME: 3.200000e+01: 
+Step: 32 
+Time (s): 3.2000e+01 
+Stage time (s): 3.2000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 44.29 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 5e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.467864
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.393902
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0228382; Expected ratio = 0.001; Absolute norm = 0.00090853; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  32 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 33, COMPLETED: 45.71 %, TIME: 3.300000e+01: 
+Step: 33 
+Time (s): 3.3000e+01 
+Stage time (s): 3.3000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 45.71 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.475396
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.373157
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0271582; Expected ratio = 0.001; Absolute norm = 0.00111149; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.463659
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.381582
+RESIDUAL CRITERION:  :: [ Obtained ratio = 4.38196e-05; Expected ratio = 0.001; Absolute norm = 1.79337e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  33 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 34, COMPLETED: 47.14 %, TIME: 3.400000e+01: 
+Step: 34 
+Time (s): 3.4000e+01 
+Stage time (s): 3.4000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 47.14 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.435872
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.371004
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0246729; Expected ratio = 0.001; Absolute norm = 0.000986931; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  34 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 35, COMPLETED: 48.57 %, TIME: 3.500000e+01: 
+Step: 35 
+Time (s): 3.5000e+01 
+Stage time (s): 3.5000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 48.57 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 4e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.438571
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.433815
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.029913; Expected ratio = 0.001; Absolute norm = 0.00127296; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.4468
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.419214
+RESIDUAL CRITERION:  :: [ Obtained ratio = 5.74775e-05; Expected ratio = 0.001; Absolute norm = 2.44598e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  35 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 36, COMPLETED: 50.00 %, TIME: 3.600000e+01: 
+Step: 36 
+Time (s): 3.6000e+01 
+Stage time (s): 3.6000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 50.00 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 3e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.439713
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.44475
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0246701; Expected ratio = 0.001; Absolute norm = 0.00101956; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.441433
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.401177
+RESIDUAL CRITERION:  :: [ Obtained ratio = 3.50103e-05; Expected ratio = 0.001; Absolute norm = 1.44689e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  36 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 37, COMPLETED: 51.43 %, TIME: 3.700000e+01: 
+Step: 37 
+Time (s): 3.7000e+01 
+Stage time (s): 3.7000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 51.43 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 4e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.445436
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.438691
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0277128; Expected ratio = 0.001; Absolute norm = 0.00114822; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.442088
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.412642
+RESIDUAL CRITERION:  :: [ Obtained ratio = 4.67088e-05; Expected ratio = 0.001; Absolute norm = 1.93527e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  37 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 38, COMPLETED: 52.86 %, TIME: 3.800000e+01: 
+Step: 38 
+Time (s): 3.8000e+01 
+Stage time (s): 3.8000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 52.86 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 4e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.43586
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.435682
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0237588; Expected ratio = 0.001; Absolute norm = 0.000929205; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  38 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 39, COMPLETED: 54.29 %, TIME: 3.900000e+01: 
+Step: 39 
+Time (s): 3.9000e+01 
+Stage time (s): 3.9000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 54.29 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 3e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.442462
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.469677
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0256769; Expected ratio = 0.001; Absolute norm = 0.00102255; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.448525
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.434386
+RESIDUAL CRITERION:  :: [ Obtained ratio = 3.73959e-05; Expected ratio = 0.001; Absolute norm = 1.48924e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  39 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 40, COMPLETED: 55.71 %, TIME: 4.000000e+01: 
+Step: 40 
+Time (s): 4.0000e+01 
+Stage time (s): 4.0000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 55.71 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 5e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.44925
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.347325
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0239242; Expected ratio = 0.001; Absolute norm = 0.000944823; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  40 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 41, COMPLETED: 57.14 %, TIME: 4.100000e+01: 
+Step: 41 
+Time (s): 4.1000e+01 
+Stage time (s): 4.1000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 57.14 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.438467
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.431938
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0275992; Expected ratio = 0.001; Absolute norm = 0.00113691; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.445239
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.380433
+RESIDUAL CRITERION:  :: [ Obtained ratio = 4.60284e-05; Expected ratio = 0.001; Absolute norm = 1.89607e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  41 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 42, COMPLETED: 58.57 %, TIME: 4.200000e+01: 
+Step: 42 
+Time (s): 4.2000e+01 
+Stage time (s): 4.2000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 58.57 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.437693
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.385968
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0266623; Expected ratio = 0.001; Absolute norm = 0.00108466; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.438762
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.374858
+RESIDUAL CRITERION:  :: [ Obtained ratio = 4.18992e-05; Expected ratio = 0.001; Absolute norm = 1.70452e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  42 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 43, COMPLETED: 60.00 %, TIME: 4.300000e+01: 
+Step: 43 
+Time (s): 4.3000e+01 
+Stage time (s): 4.3000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 60.00 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 8e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.432441
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.384505
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0239832; Expected ratio = 0.001; Absolute norm = 0.000947713; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  43 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 44, COMPLETED: 61.43 %, TIME: 4.400000e+01: 
+Step: 44 
+Time (s): 4.4000e+01 
+Stage time (s): 4.4000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 61.43 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 4e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.434728
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.348096
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0218831; Expected ratio = 0.001; Absolute norm = 0.000824389; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  44 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 45, COMPLETED: 62.86 %, TIME: 4.500000e+01: 
+Step: 45 
+Time (s): 4.5000e+01 
+Stage time (s): 4.5000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 62.86 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 5e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.44902
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.37623
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0556896; Expected ratio = 0.001; Absolute norm = 0.00173548; Expected norm =  0.001]
+ResidualBasedBlockBuilderAndSolver: Build time: 0.444591
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.381701
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000469368; Expected ratio = 0.001; Absolute norm = 1.46271e-05; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 2 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  45 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 46, COMPLETED: 64.29 %, TIME: 4.600000e+01: 
+Step: 46 
+Time (s): 4.6000e+01 
+Stage time (s): 4.6000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 64.29 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.441291
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.383693
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.0310643; Expected ratio = 0.001; Absolute norm = 0.000505122; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  46 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 47, COMPLETED: 65.71 %, TIME: 4.700000e+01: 
+Step: 47 
+Time (s): 4.7000e+01 
+Stage time (s): 4.7000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 65.71 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.461445
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.391484
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.00991794; Expected ratio = 0.001; Absolute norm = 4.03516e-05; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  47 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 48, COMPLETED: 67.14 %, TIME: 4.800000e+01: 
+Step: 48 
+Time (s): 4.8000e+01 
+Stage time (s): 4.8000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 67.14 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.437113
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.434913
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.00500444; Expected ratio = 0.001; Absolute norm = 1.26696e-05; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  48 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 49, COMPLETED: 68.57 %, TIME: 4.900000e+01: 
+Step: 49 
+Time (s): 4.9000e+01 
+Stage time (s): 4.9000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 68.57 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 4e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.462691
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.427794
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.00355433; Expected ratio = 0.001; Absolute norm = 7.8881e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  49 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 50, COMPLETED: 70.00 %, TIME: 5.000000e+01: 
+Step: 50 
+Time (s): 5.0000e+01 
+Stage time (s): 5.0000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 70.00 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.44029
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.424294
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.00284424; Expected ratio = 0.001; Absolute norm = 5.87985e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  50 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 51, COMPLETED: 71.43 %, TIME: 5.100000e+01: 
+Step: 51 
+Time (s): 5.1000e+01 
+Stage time (s): 5.1000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 71.43 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 7e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.443178
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.431396
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.00238045; Expected ratio = 0.001; Absolute norm = 4.65122e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  51 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 52, COMPLETED: 72.86 %, TIME: 5.200000e+01: 
+Step: 52 
+Time (s): 5.2000e+01 
+Stage time (s): 5.2000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 72.86 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 6e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.439348
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.410313
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.00204096; Expected ratio = 0.001; Absolute norm = 3.79513e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  52 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 53, COMPLETED: 74.29 %, TIME: 5.300000e+01: 
+Step: 53 
+Time (s): 5.3000e+01 
+Stage time (s): 5.3000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 74.29 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 6e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.438679
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.439648
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.00177713; Expected ratio = 0.001; Absolute norm = 3.15985e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  53 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 54, COMPLETED: 75.71 %, TIME: 5.400000e+01: 
+Step: 54 
+Time (s): 5.4000e+01 
+Stage time (s): 5.4000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 75.71 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 4e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.456128
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.412171
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.00156432; Expected ratio = 0.001; Absolute norm = 2.66995e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  54 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 55, COMPLETED: 77.14 %, TIME: 5.500000e+01: 
+Step: 55 
+Time (s): 5.5000e+01 
+Stage time (s): 5.5000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 77.14 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 8e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.436409
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.406623
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.00138832; Expected ratio = 0.001; Absolute norm = 2.28213e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  55 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 56, COMPLETED: 78.57 %, TIME: 5.600000e+01: 
+Step: 56 
+Time (s): 5.6000e+01 
+Stage time (s): 5.6000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 78.57 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.433742
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.375156
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.00124016; Expected ratio = 0.001; Absolute norm = 1.96915e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  56 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 57, COMPLETED: 80.00 %, TIME: 5.700000e+01: 
+Step: 57 
+Time (s): 5.7000e+01 
+Stage time (s): 5.7000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 80.00 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.434324
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.375297
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.00111378; Expected ratio = 0.001; Absolute norm = 1.71274e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  57 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 58, COMPLETED: 81.43 %, TIME: 5.800000e+01: 
+Step: 58 
+Time (s): 5.8000e+01 
+Stage time (s): 5.8000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 81.43 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.439268
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.378526
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.00100486; Expected ratio = 0.001; Absolute norm = 1.50011e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  58 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 59, COMPLETED: 82.86 %, TIME: 5.900000e+01: 
+Step: 59 
+Time (s): 5.9000e+01 
+Stage time (s): 5.9000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 82.86 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.428281
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.372
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000910201; Expected ratio = 0.001; Absolute norm = 1.32197e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  59 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 60, COMPLETED: 84.29 %, TIME: 6.000000e+01: 
+Step: 60 
+Time (s): 6.0000e+01 
+Stage time (s): 6.0000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 84.29 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 3e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.437692
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.412843
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000827366; Expected ratio = 0.001; Absolute norm = 1.17138e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  60 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 61, COMPLETED: 85.71 %, TIME: 6.100000e+01: 
+Step: 61 
+Time (s): 6.1000e+01 
+Stage time (s): 6.1000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 85.71 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 4e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.461459
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.427692
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000754445; Expected ratio = 0.001; Absolute norm = 1.0431e-06; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  61 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 62, COMPLETED: 87.14 %, TIME: 6.200000e+01: 
+Step: 62 
+Time (s): 6.2000e+01 
+Stage time (s): 6.2000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 87.14 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 3e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.43755
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.441986
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.00068992; Expected ratio = 0.001; Absolute norm = 9.33065e-07; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  62 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 63, COMPLETED: 88.57 %, TIME: 6.300000e+01: 
+Step: 63 
+Time (s): 6.3000e+01 
+Stage time (s): 6.3000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 88.57 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 4e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.447315
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.406926
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000632564; Expected ratio = 0.001; Absolute norm = 8.38082e-07; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  63 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 64, COMPLETED: 90.00 %, TIME: 6.400000e+01: 
+Step: 64 
+Time (s): 6.4000e+01 
+Stage time (s): 6.4000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 90.00 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.454325
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.381873
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000581374; Expected ratio = 0.001; Absolute norm = 7.55629e-07; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  64 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 65, COMPLETED: 91.43 %, TIME: 6.500000e+01: 
+Step: 65 
+Time (s): 6.5000e+01 
+Stage time (s): 6.5000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 91.43 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 5e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.457676
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.380245
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.00053552; Expected ratio = 0.001; Absolute norm = 6.8368e-07; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  65 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 66, COMPLETED: 92.86 %, TIME: 6.600000e+01: 
+Step: 66 
+Time (s): 6.6000e+01 
+Stage time (s): 6.6000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 92.86 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 4e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.44811
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.435479
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000494308; Expected ratio = 0.001; Absolute norm = 6.20595e-07; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  66 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 67, COMPLETED: 94.29 %, TIME: 6.700000e+01: 
+Step: 67 
+Time (s): 6.7000e+01 
+Stage time (s): 6.7000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 94.29 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 6e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.441
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.444653
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000457155; Expected ratio = 0.001; Absolute norm = 5.6504e-07; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  67 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 68, COMPLETED: 95.71 %, TIME: 6.800000e+01: 
+Step: 68 
+Time (s): 6.8000e+01 
+Stage time (s): 6.8000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 95.71 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.437493
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.427985
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000423569; Expected ratio = 0.001; Absolute norm = 5.15913e-07; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  68 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 69, COMPLETED: 97.14 %, TIME: 6.900000e+01: 
+Step: 69 
+Time (s): 6.9000e+01 
+Stage time (s): 6.9000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 97.14 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 2e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.438137
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.431912
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000393126; Expected ratio = 0.001; Absolute norm = 4.72305e-07; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  69 
+-------------------------------------------------------------------------------- 
+ 
+-------------------------------------------------------------------------------- 
+Welding Thermal Analysis STEP: 70, COMPLETED: 98.57 %, TIME: 7.000000e+01: 
+Step: 70 
+Time (s): 7.0000e+01 
+Stage time (s): 7.0000e+01 
+-------------------------------------------------------------------------------- 
+Completed (%): 98.57 
+Dt (s): 1.000000e+00 
+Executing ComputePeakTemperatureProcess 
+ResidualBasedNewtonRaphsonStrategy: System Construction Time: 1e-07
+* Solving for thermal diffusion and phase change: 
+ResidualBasedBlockBuilderAndSolver: Build time: 0.445309
+ResidualBasedBlockBuilderAndSolver: System solve time: 0.40125
+RESIDUAL CRITERION:  :: [ Obtained ratio = 0.000365467; Expected ratio = 0.001; Absolute norm = 4.33458e-07; Expected norm =  0.001]
+RESIDUAL CRITERION: Convergence is achieved
+ResidualBasedNewtonRaphsonStrategy: Convergence achieved after 1 / 10 iterations
+Executing ComputeCoolingRate 
+Welding Thermal Analysis: END OF STEP:  70 
+-------------------------------------------------------------------------------- 
+ 
+Welding Thermal Analysis: Analysis -END-  
+BuilderAndSolver: Clear Function called
+OUTFILE: 
+*  Welding Thermal Analysis : 02m59s  * 
+ 
+********************************** 
+*Elapsed calculation time:       * 
+*--------------------------------* 
+*Welding Thermal Analysis: 02m59s* 
+********************************** 
+ 
+BuilderAndSolver: Clear Function called
+BuilderAndSolver: Clear Function called
+RadflexLicenseProcess: RadFlex: Releasing checked out licenses back to the server.

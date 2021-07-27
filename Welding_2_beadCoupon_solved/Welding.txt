@@ -1,0 +1,11 @@
+(SimLab) : Begin Initialize..
+
+**********Model Definition Block..**********
+(SimLab) : Model(SimLab) : Body Name: WeldBody_2	 Body Id  : 1
+(SimLab) : Body Name: WeldBody_1	 Body Id  : 2
+(SimLab) : Body Name: Solid2	 Body Id  : 3
+(SimLab) : Number of Nodes  : 16539
+
+(SimLab) : Body Id  : 3
+(SimLab) : Body Id  : 2
+(SimLab) : Body Id  : 1

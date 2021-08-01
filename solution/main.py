@@ -77,7 +77,7 @@ def write_weldbody_file(wb):
     """
     # Create json data in the correct format.
     json_data = {
-        "weld_node_path_list": [
+        "weld_path_node_list": [
             {"Nodeid": wb["start_node_id"], "WeldSurfaceMidPoint": [wb["midpoint_x"], wb["midpoint_y"], wb["midpoint_z"]], "WeldSurfaceNormalVector": [wb["norm_vector_x"], wb["norm_vector_y"], wb["norm_vector_z"]]},
             {"Nodeid": wb["middle_node_id"], "WeldSurfaceMidPoint": [wb["midpoint_x"], wb["midpoint_y"], wb["midpoint_z"]], "WeldSurfaceNormalVector": [wb["norm_vector_x"], wb["norm_vector_y"], wb["norm_vector_z"]]},
             {"Nodeid": wb["end_node_id"], "WeldSurfaceMidPoint": [wb["midpoint_x"], wb["midpoint_y"], wb["midpoint_z"]], "WeldSurfaceNormalVector": [wb["norm_vector_x"], wb["norm_vector_y"], wb["norm_vector_z"]]}

@@ -146,13 +146,14 @@ def edit_recipe_file(filename, weldbodies, copy=True):
     hs_params["width"] = wb["heat_source_width"]
     hs_params["depth"] = wb["heat_source_depth"]
     # Update parameters for all weldbodies.
-    weld_robot_7 = contents["weld_sequence_list"]["WeldRobot_7"]
-    for x in range(len(contents["weld_sequence_list"]["WeldRobot_7"])):
-        wb = weldbodies[x]
-        params = weld_robot_7[x]
-        params["trajectory"] = wb["json_file_name"]
-        params["speed"] = wb["heat_source_speed"]
-        params["start_time"] = wb["start_time"]
+    for k in contents["weld_sequence_list"]:
+        robot = contents["weld_sequence_list"][k]
+        for x in range(len(robot)):
+            wb = weldbodies[x]
+            params = robot[x]
+            params["trajectory"] = wb["json_file_name"]
+            params["speed"] = wb["heat_source_speed"]
+            params["start_time"] = wb["start_time"]
     # Write contents back into file.
     with open(filename[:-5] + "_Edited" + ".json" if copy else filename, 'w') as file_out:
         print(json.dumps(contents), file=file_out)
